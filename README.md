@@ -1,6 +1,6 @@
 # Jupyter Notebooks로 Webスクレイピング하기
 
-[![Promo](https://github.com/luminati-io/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/) 
+[![Promo](https://github.com/bright-kr/LinkedIn-Scraper/raw/main/Proxies%20and%20scrapers%20GitHub%20bonus%20banner.png)](https://brightdata.co.kr/) 
 
 이 가이드는 대화형 코딩, 데이터 분석 및 시각화를 위해 Jupyter Notebooks를 사용하여 Webスクレイピング을 수행하는 방법을 설명합니다.
 
@@ -20,15 +20,15 @@
 
 Jupyter Notebook App은 웹 브라우저를 통해 [노트북 문서](https://jupyter-notebook-beginner-guide.readthedocs.io/en/latest/what_is_jupyter.html#notebook-document)를 편집하고 실행할 수 있게 해주는 서버-클라이언트 애플리케이션입니다. Jupyter [notebook](https://docs.jupyter.org/en/latest/)은 “컴퓨터 코드, 일반 언어 설명, 데이터, 차트, 그래프 및 도형, 대화형 컨트롤을 결합한 공유 가능한 문서”입니다. 노트북 애플리케이션은 데스크톱 애플리케이션으로 실행할 수도 있고 원격 서버에 설치할 수도 있습니다.
 
-![The Jupyter Notebook App interface](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-85.png)
+![The Jupyter Notebook App interface](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-85.png)
 
 Jupyter Notebooks는 노트북 문서 내의 코드를 실행하는 역할을 하는 계산 엔진인 “커널(kernel)”을 중심으로 구성됩니다. 특히 `ipython` 커널은 Python 코드를 실행하며, 다른 언어용 커널도 사용할 수 있습니다.
 
-![Launching a new document via the ipython kernel](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-86.png)
+![Launching a new document via the ipython kernel](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-86.png)
 
 앱의 대시보드는 로컬 파일 표시, 기존 노트북 문서 열기, 문서의 커널 관리 등과 같은 일반적인 작업을 지원합니다:
 
-![The Jupyter Notebooks’ dashboard](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-87.png)
+![The Jupyter Notebooks’ dashboard](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-87.png)
 
 ## Why Use Jupyter Notebooks for Web Scraping?
 
@@ -109,11 +109,11 @@ jupyter notebook
 
 “New > Python 3” 옵션을 클릭하여 새 파일을 생성합니다:
 
-![Creating a new Jupyter Notebook file](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-84.png)
+![Creating a new Jupyter Notebook file](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-84.png)
 
 새 파일은 자동으로 `untitled.ipynb`로 생성됩니다. 대시보드에서 이를 `analysis.ipynb`로 이름을 변경합니다:
 
-![Renaming a Jupyter Notebook file](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-83.png)
+![Renaming a Jupyter Notebook file](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-83.png)
 
 이 단계가 끝났을 때 프로젝트 구조는 다음과 같습니다:
 
@@ -127,7 +127,7 @@ scraper/
 
 웹사이트 [worldometer](https://www.worldometers.info/)에서 데이터를 スクレイピング하겠습니다. 대상 페이지는 연도별 [미국의 CO2 배출량](https://www.worldometers.info/co2-emissions/us-co2-emissions/)과 관련된 페이지로, 다음과 같은 표 형태 데이터를 제공합니다:
 
-![The tabular data about the C02 emissions per year in United States](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-82.png)
+![The tabular data about the C02 emissions per year in United States](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-82.png)
 
 ### Step 3: Retrieve the Data
 
@@ -183,7 +183,7 @@ print(f"Data has been saved to {csv_file}")
 
 셀을 실행하는 다른 방법은 해당 셀을 선택한 다음 대시보드에서 “Run” 버튼을 누르는 것입니다:
 
-![Running a cell in a Jupyter Notebook](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-81.png)
+![Running a cell in a Jupyter Notebook](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-81.png)
 
 ### Step 4: Ensure Data Is Correct
 
@@ -207,7 +207,7 @@ df.head()
 
 기대 결과는 다음과 같습니다:
 
-![The first five rows of the data frame](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-80.png)
+![The first five rows of the data frame](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-80.png)
 
 ### Step 5: Visualize the Data
 
@@ -254,13 +254,13 @@ plt.show()
 
 기대 결과는 다음과 같습니다:
 
-![The resulting plot](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-79.png)
+![The resulting plot](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-79.png)
 
 ### Step #6: Put It All Together
 
 Webスクレイピング을 위한 전체 Jupyter Notebook은 다음과 같이 보입니다:
 
-![The entire Jupyter Notebook document](https://github.com/luminati-io/jupyter-notebooks-web-scraping/blob/main/Images/image-78.png)
+![The entire Jupyter Notebook document](https://github.com/bright-kr/jupyter-notebooks-web-scraping/blob/main/Images/image-78.png)
 
 ## Use Cases of Jupyter Notebook Web Scraping
 
@@ -274,6 +274,6 @@ Webスクレイピング을 위한 전체 Jupyter Notebook은 다음과 같이 �
 
 Jupyter Notebooks는 Webスクレイピング에 강력한 도구가 될 수 있지만, Webスクレイピング 작업을 확장하거나 작업을 자동화하는 측면에서는 가장 효율적인 솔루션은 아닙니다.
 
-Bright Data의 [Web Scrapers](https://brightdata.co.kr/products/web-scraper)는 데이터 수집 노력을 단순화하고 강화합니다. 100개 이상의 도메인에 대한 전용 エンドポイント, 대량 リクエスト 처리, 자동 IP 로테이션, 그리고 [CAPTCHA solving](https://github.com/luminati-io/Captcha-solver) 기능을 제공합니다.
+Bright Data의 [Web Scrapers](https://brightdata.co.kr/products/web-scraper)는 데이터 수집 노력을 단순화하고 강화합니다. 100개 이상의 도메인에 대한 전용 エンドポイント, 대량 リクエスト 처리, 자동 IP 로테이션, 그리고 [CAPTCHA solving](https://github.com/bright-kr/Captcha-solver) 기능을 제공합니다.
 
 지금 무료 Bright Data 계정을 생성하여 スクレイピング 솔루션을 사용해 보고 プロキシ도 테스트해 보십시오!
